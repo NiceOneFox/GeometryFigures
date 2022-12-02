@@ -14,19 +14,10 @@ namespace Figures.Implementation
             Radius = R;
         }
 
-        public double GetRadius()
-        {
-            return Radius;
-        }
+        public double GetRadius() => Radius;
 
-        public double GetPerimeter()
-        {
-            return 2 * Math.PI * Radius; // 2PiR
-        }
+        public double GetPerimeter() => 2 * Math.PI * Radius; // 2PiR
 
-        public double GetArea()
-        {
-            return Math.PI * Math.Pow(Radius, 2); // 2PiR^2
-        }
+        public double GetArea() => Math.PI * Math.Pow(Radius, 2); // 2PiR^2
     }
 }

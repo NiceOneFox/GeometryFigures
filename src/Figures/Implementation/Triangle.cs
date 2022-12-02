@@ -32,9 +32,11 @@ namespace Figures.Implementation
             return Math.Sqrt(p * (p - SideA) * (p - SideB) * (p - SideC)); //Heron Formula
         }
 
-        public double GetPerimeter()
-        {
-            return SideA + SideB + SideC;
-        }
+        public double GetPerimeter() => SideA + SideB + SideC;
+
+        /// <summary>
+        /// Check if triangle is rectangular
+        /// </summary>
+        public bool IsRightTriangle() => Math.Pow(SideA, 2) + Math.Pow(SideB, 2) == Math.Pow(SideC, 2);
     }
 }

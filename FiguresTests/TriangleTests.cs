@@ -28,5 +28,15 @@ namespace FiguresTests
 
             perimeter.Should().Be(15);
         }
+
+        [Test]
+        public void Triangle_is_rectangular()
+        {
+            var sut = new Triangle(3, 4, 5);
+
+            var result = sut.IsRightTriangle();
+
+            result.Should().BeTrue();
+        }
     }
 }

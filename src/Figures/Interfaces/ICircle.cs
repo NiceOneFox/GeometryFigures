@@ -2,6 +2,6 @@
 {
     public interface ICircle
     {
-        public double GetRadius();
+        double GetRadius();
     }
 }
