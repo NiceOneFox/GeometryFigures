@@ -1,4 +1,5 @@
 ﻿using Figures.Interfaces;
+using Figures.Validation;
 
 namespace Figures.Implementation
 {
@@ -8,7 +9,7 @@ namespace Figures.Implementation
 
         public Circle(double R)
         {
-            //ValidationOfFigures.CheckIfLessOrEqualZero(R);
+            FigureValidation.CheckIfLessOrEqualZero(R);
 
             Radius = R;
         }

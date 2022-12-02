@@ -1,4 +1,5 @@
 ﻿using Figures.Interfaces;
+using Figures.Validation;
 
 namespace Figures.Implementation
 {
@@ -13,10 +14,10 @@ namespace Figures.Implementation
 
         public Triangle(double a, double b, double c)
         {
-            //ValidationOfFigures.CheckIfLessOrEqualZero(a);
-            //ValidationOfFigures.CheckIfLessOrEqualZero(b);
-            //ValidationOfFigures.CheckIfLessOrEqualZero(c);
-            //ValidationOfFigures.CheckIfTriangle(a, b, c);
+            FigureValidation.CheckIfLessOrEqualZero(a);
+            FigureValidation.CheckIfLessOrEqualZero(b);
+            FigureValidation.CheckIfLessOrEqualZero(c);
+            FigureValidation.CheckIfTriangle(a, b, c);
 
             SideA = a;
             SideB = b;
