@@ -26,7 +26,7 @@ namespace Figures.Implementation
 
         public double GetArea()
         {
-            return 2 * Math.PI * Math.Pow(Radius, 2); // 2PiR^2
+            return Math.PI * Math.Pow(Radius, 2); // 2PiR^2
         }
     }
 }
