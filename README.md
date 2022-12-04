@@ -1,4 +1,4 @@
-GeometryFigures
+## GeometryFigures
 
 ## Решение задания 2
 SELECT p.name as product_name, c.name AS category_name <br/>
